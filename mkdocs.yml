@@ -137,8 +137,8 @@ markdown_extensions:
   - pymdownx.caret
 
 nav:
-  - Home: index.md
-  - Visão Produto: visao-produto/index.md
-  - Resolução do Case: case/index.md
+  - Teste prático UX/UI: index.md
+  - Visão do Produto: visao-produto/index.md
+  - Visão da Solução: visao-solucao/index.md
   - Backlog do produto: backlog/index.md
-  - Protótipo do produto: prototipo/index.md
+  - Protótipo: prototipo/index.md
