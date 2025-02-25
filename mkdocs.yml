@@ -1,0 +1,144 @@
+site_name: Teste prático UX/UI
+repo_url: https://github.com/m4rllon/Case-Teste-pratico-UX-UI
+site_description: Site voltado para a documentação Teste prático UX/UI da vaga de Estágio em UX/UI
+repo_name: Case Teste prático UX/UI
+theme:
+  name: material
+  custom_dir: assets
+  language: pt
+  features:
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.tooltips
+    - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - search.share
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para o modo escuro
+
+    # Paleta para o tema claro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para o modo claro
+
+extra_css:
+  - stylesheets/termynal.css
+  - stylesheets/extra.css
+extra:
+  version:
+    provider: mike
+extra_javascript:
+  - javascripts/removeCredits.js
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+watch:
+  - assets/includes
+  - assets/stylesheets/extra.css
+  - assets/home.html
+plugins:
+  - termynal:
+      title: "shell"
+      buttons: "macos"
+      prompt_literal_start:
+        - "$"
+        - ">"
+        - ">>>"
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - pymdownx.superfences
+  - pymdownx.details
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      use_pygments: false
+  - pymdownx.snippets:
+      auto_append:
+        - assets/includes/abbreviations.md
+  - codehilite
+  - markdown_include.include:
+      base_path: .
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.blocks.admonition:
+      types:
+        - note
+        - attention
+        - caution
+        - danger
+        - error
+        - tip
+        - hint
+        - warning
+        - info
+        - check
+  - pymdownx.blocks.details
+  - pymdownx.blocks.tab:
+      alternate_style: true
+  - mdx_include
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.caret
+
+nav:
+  - Home: index.md
+  - Visão Produto: visao-produto/index.md
+  - Resolução do Case: case/index.md
+  - Backlog do produto: backlog/index.md
+  - Protótipo do produto: prototipo/index.md
