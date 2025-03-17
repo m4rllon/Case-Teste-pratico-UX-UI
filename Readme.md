@@ -1,8 +1,8 @@
 ## **Introdução**
 
-Este site tem como objetivo documentar todo o processo de idealização e composição do protótipo de alta fidelidade solicitado pela **Sinerji Instituto de Pesquisa e Desenvolvimento Tecnológico e Empresarial** como teste prático para vaga de **Estágio em UX/UI**. Aqui, o conteúdo será organizado da seguinte forma:
+Este site tem como objetivo documentar todo o processo de idealização e composição do protótipo de alta fidelidade solicitado pelo **Desafio técnico em UX/UI**. Aqui, o conteúdo será organizado da seguinte forma:
 
-- [**Visão do Produto:**](https://case-teste-pratico-ux-ui.vercel.app/visao-produto/) Descrição do case fornecido pela própria Sinerji;
+- [**Visão do Produto:**](https://case-teste-pratico-ux-ui.vercel.app/visao-produto/) Descrição do case;
 - [**Visão da Solução:**](https://case-teste-pratico-ux-ui.vercel.app/visao-solucao/) Documentação do processo de estudo e idealização da solução;
 - [**Protótipo:**](https://case-teste-pratico-ux-ui.vercel.app/prototipo/) Apresentação do protótipo solicitado pelo teste, bem como os padrões de design adotados.
 
